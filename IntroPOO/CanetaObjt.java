@@ -5,7 +5,7 @@ public class CanetaObjt {
 	public static void main(String[] args) {
 	 Caneta c1 = new Caneta();
 	 c1.cor = "Azul";
-	 c1.ponta = 0.5f;// refência a atributo
+	 c1.ponta = 0.5f;// referência a atributo
 	 c1.tampar(); //referência a método
 	 
      c1.status(); 
