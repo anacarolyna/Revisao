@@ -4,7 +4,7 @@ public class Caneta1 {
 	public String  cor, modelo;
 	private float ponta;
 	protected int carga;
-	protected boolean tampada;
+	private boolean tampada;
 	
 	void status() {
 		System.out.println("Modelo: "+ this.modelo);
@@ -22,15 +22,13 @@ public class Caneta1 {
 		}
 	}
 	
-	 protected void tampar() { // this = referência ao próprio objt que chamou, sempre que quiser modificar o atributo dentro da própria classe coloque a palavra this 
+	 public void tampar() { // this = referência ao próprio objt que chamou, sempre que quiser modificar o atributo dentro da própria classe coloque a palavra this 
 		this.tampada = true; //this = nome do objeto que chamou o método que no caso é o c1
 		
 	}
-	 protected void destampar() {
+	 public void destampar() {
 		this.tampada = false;
 	}
-	
-
-	
-
+	 
+	 
 }
